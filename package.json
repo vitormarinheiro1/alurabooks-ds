@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ds-alurabooks-base",
+  "name": "ds-alurabooks-vitor",
   "author": "vinicios neves",
   "module": "dist/ds-alurabooks-base.esm.js",
   "size-limit": [
