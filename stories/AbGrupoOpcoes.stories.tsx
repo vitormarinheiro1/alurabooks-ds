@@ -16,7 +16,7 @@ Padrao.args = {
         {
         id: 1,
         titulo: 'E-book',
-        corpo: 'R$ 00,00',
+        corpo: 'R$ 29,90',
         rodape: '.pdf, .epub, .mob'
     },
         {
