@@ -4,7 +4,7 @@ import styled from "styled-components";
 const SectionEstilizada = styled.section<{ selecionado: boolean }>`
     width: 194px;
     height: 88px;
-    background-color: ${props => props.selecionado ? 'linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%' : '#FFFFFF'};
+    background: ${props => props.selecionado ? 'linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)' : '#FFFFFF'};
     border: 1px solid;
     border-color: ${props => props.selecionado ? '#002F52' : '#EB9B00'};
     border-radius: 8px;
