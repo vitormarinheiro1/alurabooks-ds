@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export interface CardProps {
     children: ReactNode
+    texto: string
 }
 
 const CardStyled = styled.div`
@@ -12,10 +13,11 @@ const CardStyled = styled.div`
     padding: 48px;
 `
 
-export const Card = ({ children }: CardProps) => {
+export const Card = ({ children, texto }: CardProps) => {
     return(
         <CardStyled>
             {children}
+            {texto}
         </CardStyled>
     )
 }

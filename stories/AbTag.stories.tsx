@@ -1,8 +1,6 @@
-// stories/AbTag.stories.tsx
-
 import React from "react";
-import { AbTag, AbTagProps } from '../src/componentes/AbTag'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { AbTag, AbTagProps } from '../src/componentes/AbTag'
 
 export default {
     title: 'Componentes/AbTag',

@@ -1,16 +1,16 @@
-import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
-import { Card } from "../src/componentes/Card";
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import { Card, CardProps } from "../src/componentes/Card";
 
 export default {
     title: 'Componentes/Card',
     component: Card
 } as ComponentMeta<typeof Card>
 
-export const CardComponent = () => {
-    return (
-        <Card>
-            <h1>Olá, eu sou um Card!</h1>
-        </Card>
-    )
-}
+const Template: ComponentStory<typeof Card> = (args) => <Card {...args}/>
+
+export const Primario = Template.bind({})
+
+Primario.args = {
+    texto: 'UI VITOR CARD'
+} as CardProps
