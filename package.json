@@ -36,7 +36,7 @@
     "trailingComma": "es5"
   },
   "name": "ds-alurabooks-vitor",
-  "author": "vinicios neves",
+  "author": "vitor marinheiro",
   "module": "dist/ds-alurabooks-base.esm.js",
   "size-limit": [
     {

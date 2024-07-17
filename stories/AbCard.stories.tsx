@@ -1,12 +1,14 @@
 import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { Card, CardProps } from "../src/componentes/AbCard";
+import { AbCard, AbCardProps } from "../src/componentes/AbCard";
 
 export default {
-    title: 'Componentes/Card',
-    component: Card
-} as ComponentMeta<typeof Card>
-
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args}/>
-
-export const Primario = Template.bind({})
+    title: 'componentes/AbCard',
+    component: AbCard,
+  } as ComponentMeta<typeof AbCard>;
+  
+  export const AbCardComponent = () => {
+      return (<AbCard>
+          <h1>Olá, eu sou um Card</h1>
+      </AbCard>)
+  }
