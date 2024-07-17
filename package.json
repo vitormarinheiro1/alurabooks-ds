@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,7 +36,7 @@
     "trailingComma": "es5"
   },
   "name": "ds-alurabooks-vitor",
-  "author": "vitor marinheiro",
+  "author": "vinicios neves",
   "module": "dist/ds-alurabooks-base.esm.js",
   "size-limit": [
     {
