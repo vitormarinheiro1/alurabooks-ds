@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -37,17 +37,6 @@
   },
   "name": "ds-alurabooks-vitor",
   "author": "vinicios neves",
-  "module": "dist/ds-alurabooks-base.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/ds-alurabooks-base.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/ds-alurabooks-base.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@size-limit/preset-small-lib": "^8.1.0",
