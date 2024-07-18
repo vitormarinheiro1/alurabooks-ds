@@ -61,7 +61,7 @@ export const AbCampoTexto = ({
                 darkmode={darkmode}
                 type={type}
                 value={value}
-                onChange={event => onChange(event.target.value)}
+                onChange={(event: any) => onChange(event.target.value)}
             />
         </div>
     )
