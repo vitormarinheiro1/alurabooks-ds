@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const LabelEstilizada = styled.label<{ darkmode: boolean }>`
-    color: ${(props) => props.darkmode ? '#FFF' : '#002F52'};
+const LabelEstilizada = styled.label`
     display: block;
     font-weight: 700;
     font-size: 16px;
@@ -11,7 +10,7 @@ const LabelEstilizada = styled.label<{ darkmode: boolean }>`
     margin-bottom: 8px;
 `
 
-const InputEstilizado = styled.input<{ placeholderAlign: string, darkmode: boolean }>`
+const InputEstilizado = styled.input`
     font-size: 16px;
     line-height: 24px;
     padding: 8px 24px;
@@ -22,23 +21,14 @@ const InputEstilizado = styled.input<{ placeholderAlign: string, darkmode: boole
     }
     width: 100%;
     box-sizing: border-box;
-    background: ${(props) => props.darkmode ? 'transparent' : '#FFF'};
-    border-color: ${(props) => props.darkmode ? '#FFF' : '#002F52'};
-    text-align: ${(props) => props.placeholderAlign};
-    ::placeholder,
-    ::-webkit-input-placeholder  {
-        color: ${(props) => props.darkmode ? '#FFF' : '#002F52'};
-    }
 `
 
 export interface AbCampoTextoProps {
     label?: string;
     placeholder?: string;
-    placeholderAlign?: 'left' | 'center' | 'right';
     value: string;
     type?: 'text' | 'email' | 'password' | 'date';
-    onChange: (value: string) => void
-    darkmode?: boolean
+    onChange: (value: string) => void;
 }
 
 export const AbCampoTexto = ({ 
@@ -46,19 +36,15 @@ export const AbCampoTexto = ({
         value, 
         onChange, 
         type = 'text', 
-        placeholder = "", 
-        placeholderAlign = 'left', 
-        darkmode = false 
+        placeholder = '', 
 }: AbCampoTextoProps) => {
     return (
         <div>
-            {label && <LabelEstilizada darkmode={darkmode}>
+            {label && <LabelEstilizada>
                 {label}
             </LabelEstilizada>}
             <InputEstilizado
                 placeholder={placeholder}
-                placeholderAlign={placeholderAlign}
-                darkmode={darkmode}
                 type={type}
                 value={value}
                 onChange={(event: any) => onChange(event.target.value)}
