@@ -8,7 +8,7 @@ const LabelEstilizada = styled.label<{ darkmode: boolean }>`
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 16px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
 `
 
 const InputEstilizado = styled.input<{ placeholderAlign: string, darkmode: boolean }>`
