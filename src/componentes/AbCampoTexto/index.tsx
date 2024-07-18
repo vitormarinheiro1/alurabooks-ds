@@ -37,11 +37,11 @@ export interface AbCampoTextoProps {
     placeholderAlign?: 'left' | 'center' | 'right';
     value: string;
     type?: 'text' | 'email' | 'password' | 'date';
-    onChange: (value: string) => void;
-    darkmode?: boolean;
+    onChange: (value: string) => void
+    darkmode?: boolean
 }
 
-export const AbCampoTexto: React.FC<AbCampoTextoProps> = ({ 
+export const AbCampoTexto = ({ 
         label, 
         value, 
         onChange, 
@@ -49,11 +49,7 @@ export const AbCampoTexto: React.FC<AbCampoTextoProps> = ({
         placeholder = "", 
         placeholderAlign = 'left', 
         darkmode = false 
-}) => {
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        onChange(event.target.value);
-    };
-
+}: AbCampoTextoProps) => {
     return (
         <div>
             {label && <LabelEstilizada darkmode={darkmode}>
@@ -65,8 +61,8 @@ export const AbCampoTexto: React.FC<AbCampoTextoProps> = ({
                 darkmode={darkmode}
                 type={type}
                 value={value}
-                onChange={handleChange}
+                onChange={event => onChange(event.target.value)}
             />
         </div>
-    );
+    )
 }

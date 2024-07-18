@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AbCampoTexto, AbCampoTextoProps } from '../src/componentes/AbCampoTexto'
+import { AbCampoTexto, AbCampoTextoProps } from '../src'
 
 export default {
   title: 'componentes/AbCampoTexto',
@@ -17,5 +17,5 @@ const Template: ComponentStory<typeof AbCampoTexto> = (args) => <AbCampoTexto {.
 
 export const AbCampoTextoComponent = Template.bind({})
 AbCampoTextoComponent.args = {
-    label: 'Título da label',
+    label: 'Uma label interessante',
 } as AbCampoTextoProps
